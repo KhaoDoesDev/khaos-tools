@@ -62,6 +62,8 @@ export default function MinecraftSmallTextPage() {
           name="description"
           content="Convert normal text into Minecraft small text."
         />
+        <meta property="og:title" content="Khao's Tools | Minecraft Small Text Converter" />
+        <meta property="og:description" content="Convert normal text into Minecraft small text." />
       </Helmet>
 
       <h1 className="text-3xl font-extrabold text-center mb-3">
