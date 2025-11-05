@@ -68,11 +68,6 @@ export default function PDFToImagesPage() {
     );
   };
 
-  const selectAllPages = () => {
-    if (selectedPages.length === previews.length) setSelectedPages([]);
-    else setSelectedPages(previews.map((p) => p.page));
-  };
-
   const handleDownloadAll = async () => {
     if (!previews.length) return;
     setDownloading(true);
@@ -151,11 +146,9 @@ export default function PDFToImagesPage() {
 
         {!loading && previews.length > 0 && (
           <div className="flex justify-between items-center mt-6">
-            <Button onClick={selectAllPages} variant="secondary">
-              {selectedPages.length === previews.length
-                ? "Unselect All"
-                : "Select All Pages"}
-            </Button>
+            {selectedPages.length > 0 && <Button onClick={() => setSelectedPages([])} variant="secondary">
+              Unselect All
+            </Button>}
 
             <Button
               onClick={handleDownloadAll}
