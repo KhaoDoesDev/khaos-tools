@@ -103,7 +103,7 @@ export default function PDFToImagesPage() {
         <title>Khao's Tools | PDF to Images Converter</title>
       </Helmet>
       <h1 className="text-4xl font-extrabold text-center">
-        PDF to Image Converter
+        PDF to Images Converter
       </h1>
 
       <div className="backdrop-blur-md border rounded-2xl p-6 shadow-xl">
