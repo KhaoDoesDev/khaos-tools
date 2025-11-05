@@ -1,4 +1,5 @@
 import { Image, MessageCircleQuestion, Pickaxe } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router";
 
 const tools = [
@@ -31,6 +32,12 @@ const tools = [
 export default function LandingPage() {
   return (
     <>
+      <Helmet>
+        <title>Khao's Tools</title>
+        <meta name="description" content="A collection of random tools I needed and their websites were too slow or needed to pay for." />
+        <meta property="og:title" content="Khao's Tools" />
+        <meta property="og:description" content="A collection of random tools I needed and their websites were too slow or needed to pay for." />
+      </Helmet>
       <section className="my-12 text-center max-w-4xl mx-auto">
         <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
           Simple tools because I got bored.
