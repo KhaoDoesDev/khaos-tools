@@ -45,8 +45,8 @@ function toSmallCaps(text: string): string {
     .join("");
 }
 
-export default function MinecraftSmallFontPage() {
-  const [input, setInput] = useState("hi there");
+export default function MinecraftSmallTextPage() {
+  const [input, setInput] = useState("");
   const output = toSmallCaps(input);
 
   const copyToClipboard = async () => {

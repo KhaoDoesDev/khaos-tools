@@ -4,11 +4,11 @@ import "./index.css";
 import PDFToImagesPage from "./views/pdf-to-images.tsx";
 import LandingPage from "./views/landing.tsx";
 import NotFoundPage from "./views/not-found.tsx";
+import MinecraftSmallTextPage from "./views/minecraft-small-text.tsx";
 import { ThemeProvider } from "./components/theme-provider.tsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Layout } from "./layout.tsx";
 import { HelmetProvider } from "react-helmet-async";
-import MinecraftSmallFontPage from "./views/minecraft-small-font.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -20,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
             <Route element={<Layout />}>
               <Route index element={<LandingPage />} />
               <Route path="/pdf-to-images" element={<PDFToImagesPage />} />
-              <Route path="/minecraft-fonts" element={<MinecraftSmallFontPage />} />
+              <Route path="/minecraft-small-text" element={<MinecraftSmallTextPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

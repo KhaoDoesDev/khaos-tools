@@ -1,4 +1,4 @@
-import { Image, MessageCircleQuestion } from "lucide-react";
+import { Image, MessageCircleQuestion, Pickaxe } from "lucide-react";
 import { Link } from "react-router";
 
 const tools = [
@@ -8,6 +8,14 @@ const tools = [
       "Convert your PDFs to downloadable images with options to choose which pages you want.",
     icon: <Image className="size-8 text-blue-400" />,
     href: "/pdf-to-images",
+    color: "from-blue-600/30 to-blue-500/10",
+  },
+  {
+    title: "Text to Minecraft Small Text",
+    description:
+      "Converts your normal text to Minecraft compatible small text, usually seen in newer Minecraft servers. (Latin Letter Small Capital)",
+    icon: <Pickaxe className="size-8 text-blue-400" />,
+    href: "/minecraft-small-text",
     color: "from-blue-600/30 to-blue-500/10",
   },
   {
