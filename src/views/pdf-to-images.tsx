@@ -101,6 +101,9 @@ export default function PDFToImagesPage() {
     <div className="max-w-4xl mx-auto space-y-8 mt-6 mb-12">
       <Helmet>
         <title>Khao's Tools | PDF to Images Converter</title>
+        <meta name="description" content="Convert your PDFs into images completely client-sided." />
+        <meta property="og:title" content="Khao's Tools | PDF to Images Converter" />
+        <meta property="og:description" content="Convert your PDFs into images completely client-sided." />
       </Helmet>
       <h1 className="text-4xl font-extrabold text-center">
         PDF to Images Converter
