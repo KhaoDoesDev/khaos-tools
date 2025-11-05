@@ -8,6 +8,7 @@ import { ThemeProvider } from "./components/theme-provider.tsx";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Layout } from "./layout.tsx";
 import { HelmetProvider } from "react-helmet-async";
+import MinecraftSmallFontPage from "./views/minecraft-small-font.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")!).render(
             <Route element={<Layout />}>
               <Route index element={<LandingPage />} />
               <Route path="/pdf-to-images" element={<PDFToImagesPage />} />
+              <Route path="/minecraft-fonts" element={<MinecraftSmallFontPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
