@@ -5,6 +5,7 @@ import { saveAs } from "file-saver";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { Helmet } from "react-helmet-async";
 
 export default function PDFToImagesPage() {
   const [previews, setPreviews] = useState<{ page: number; img: string }[]>([]);
@@ -98,6 +99,9 @@ export default function PDFToImagesPage() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 mt-6 mb-12">
+      <Helmet>
+        <title>Khao's Tools | PDF to Images Converter</title>
+      </Helmet>
       <h1 className="text-4xl font-extrabold text-center">
         PDF to Image Converter
       </h1>

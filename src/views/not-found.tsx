@@ -1,10 +1,14 @@
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router';
 
 export default function NotFoundPage() {
   return (
     <div className="min-h-dvh bg-background flex flex-col items-center justify-center px-6 text-center">
+      <Helmet>
+        <title>Khao's Tools | 404 Not Found</title>
+      </Helmet>
       <h1
         className="text-8xl font-extrabold mb-4 bg-gradient-to-br from-blue-500/80 to-purple-500 bg-clip-text text-transparent"
       >
