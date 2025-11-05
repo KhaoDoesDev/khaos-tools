@@ -145,7 +145,7 @@ export default function PDFToImagesPage() {
         )}
 
         {!loading && previews.length > 0 && (
-          <div className="flex justify-between items-center mt-6">
+          <div className="flex justify-end gap-2 items-center mt-6">
             {selectedPages.length > 0 && <Button onClick={() => setSelectedPages([])} variant="secondary">
               Unselect All
             </Button>}
