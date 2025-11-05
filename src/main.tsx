@@ -1,0 +1,25 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import PDFToImagesPage from "./views/pdf-to-images.tsx";
+import LandingPage from "./views/landing.tsx";
+import NotFoundPage from "./views/not-found.tsx";
+import { ThemeProvider } from "./components/theme-provider.tsx";
+import { BrowserRouter, Route, Routes } from "react-router";
+import { Layout } from "./layout.tsx";
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<NotFoundPage />} />
+          <Route element={<Layout />}>
+            <Route index element={<LandingPage />} />
+            <Route path="/pdf-to-images" element={<PDFToImagesPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  </StrictMode>
+);
