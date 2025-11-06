@@ -5,7 +5,7 @@ import { saveAs } from "file-saver";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/seo";
 
 export default function PDFToImagesPage() {
   const [previews, setPreviews] = useState<{ page: number; img: string }[]>([]);
@@ -96,12 +96,7 @@ export default function PDFToImagesPage() {
 
   return (
     <div className="max-w-4xl mx-auto space-y-8 mt-6 mb-12">
-      <Helmet>
-        <title>Khao's Tools | PDF to Images Converter</title>
-        <meta name="description" content="Convert your PDFs into images completely client-sided." />
-        <meta property="og:title" content="Khao's Tools | PDF to Images Converter" />
-        <meta property="og:description" content="Convert your PDFs into images completely client-sided." />
-      </Helmet>
+      <Seo title="Khao's Tools" slug="PDF to Images Converter" description="Convert your PDFs into images completely client-sided." />
       <h1 className="text-4xl font-extrabold text-center">
         PDF to Images Converter
       </h1>

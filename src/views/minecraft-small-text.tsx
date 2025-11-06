@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import { Seo } from "@/seo";
 
 const latinLetterSmallCapitalMap: Record<string, string> = {
   a: "ᴀ",
@@ -56,16 +56,7 @@ export default function MinecraftSmallTextPage() {
 
   return (
     <div className="max-w-2xl mx-auto mt-10 mb-12">
-      <Helmet>
-        <title>Khao's Tools | Minecraft Small Text Converter</title>
-        <meta
-          name="description"
-          content="Convert normal text into Minecraft small text."
-        />
-        <meta property="og:title" content="Khao's Tools | Minecraft Small Text Converter" />
-        <meta property="og:description" content="Convert normal text into Minecraft small text." />
-      </Helmet>
-
+      <Seo title="Khao's Tools" slug="Minecraft Small Text Converter" description="Convert normal text into Minecraft small text." />
       <h1 className="text-3xl font-extrabold text-center mb-3">
         Minecraft Small Text Converter
       </h1>
