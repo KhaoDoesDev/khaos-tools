@@ -95,7 +95,7 @@ export default function PDFToImagesPage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8 mt-6 mb-12">
+    <main className="max-w-4xl mx-auto space-y-8 mt-6 mb-12">
       <Seo title="Khao's Tools" slug="PDF to Images Converter" description="Convert your PDFs into images completely client-sided." />
       <h1 className="text-4xl font-extrabold text-center">
         PDF to Images Converter
@@ -199,6 +199,6 @@ export default function PDFToImagesPage() {
           ))}
         </div>
       )}
-    </div>
+    </main>
   );
 }

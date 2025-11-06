@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 export default function NotFoundPage() {
   return (
-    <div className="min-h-dvh bg-background flex flex-col items-center justify-center px-6 text-center">
+    <main className="min-h-dvh bg-background flex flex-col items-center justify-center px-6 text-center">
       <Helmet>
         <title>Khao's Tools | 404 Not Found</title>
       </Helmet>
@@ -32,6 +32,6 @@ export default function NotFoundPage() {
           </Link>
         </Button>
       </div>
-    </div>
+    </main>
   );
 }

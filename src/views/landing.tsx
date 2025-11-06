@@ -31,7 +31,7 @@ const tools = [
 
 export default function LandingPage() {
   return (
-    <>
+    <main>
       <Seo title="Khao's Tools" description="A collection of random tools I needed and their websites were too slow or needed to pay for." />
       <section className="my-12 text-center max-w-4xl mx-auto">
         <h1 className="text-5xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -46,16 +46,16 @@ export default function LandingPage() {
       <section className="max-w-4xl mx-auto px-6 pb-12">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {tools.map((tool) => (
-            <div key={tool.title} className="aspect-square">
+            <div key={tool.title}>
               <Link
                 to={tool.href}
                 target={tool.target}
                 className={`flex flex-col bg-gradient-to-br ${tool.color} border border-muted-foreground/20 rounded-2xl p-6 hover:border-muted-foreground/60 transition-all duration-300 w-full h-full`}
               >
-                <h3 className="text-xl font-semibold text-white mb-2 flex items-center gap-2">
+                <h2 className="text-xl font-semibold text-white mb-2 flex items-center gap-2">
                   {tool.icon}
                   {tool.title}
-                </h3>
+                </h2>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {tool.description}
                 </p>
@@ -64,6 +64,6 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
-    </>
+    </main>
   );
 }

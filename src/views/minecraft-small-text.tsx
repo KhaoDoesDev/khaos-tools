@@ -55,7 +55,7 @@ export default function MinecraftSmallTextPage() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto mt-10 mb-12">
+    <main className="max-w-2xl mx-auto mt-10 mb-12">
       <Seo title="Khao's Tools" slug="Minecraft Small Text Converter" description="Convert normal text into Minecraft small text." />
       <h1 className="text-3xl font-extrabold text-center mb-3">
         Minecraft Small Text Converter
@@ -88,6 +88,6 @@ export default function MinecraftSmallTextPage() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
