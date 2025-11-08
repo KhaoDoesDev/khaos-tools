@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/collector/:path*",
+      "destination": "https://collector.onedollarstats.com/:path*"
+    }
+  ]
+}
