@@ -4,6 +4,7 @@
     {
       "source": "/collector/:path*",
       "destination": "https://collector.onedollarstats.com/:path*"
-    }
+    },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
