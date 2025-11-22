@@ -8,7 +8,7 @@ export function Navbar() {
         <NavLink to="/" className="text-xl font-bold text-white">
           Khao's Tools
         </NavLink>
-        <nav className="hidden sm:flex gap-6 text-sm text-gray-400">
+        <nav className="hidden sm:flex gap-6 text-sm text-muted-foreground">
           <Button variant="link" size="sm" asChild>
             <NavLink
               to="https://www.khaodoes.dev/"
