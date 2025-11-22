@@ -1,5 +1,5 @@
 import { Seo } from "@/seo";
-import { Image, MessageCircleQuestion, Pickaxe } from "lucide-react";
+import { Image, MessageCircleQuestion, Pickaxe, Shield } from "lucide-react";
 import { Link } from "react-router";
 
 const tools = [
@@ -17,6 +17,14 @@ const tools = [
       "Converts your normal text to Minecraft compatible small text, usually seen in newer Minecraft servers. (Latin Letter Small Capital)",
     icon: <Pickaxe className="size-8 text-blue-400" />,
     href: "/minecraft-small-text",
+    color: "from-blue-600/30 to-blue-500/10",
+  },
+  {
+    title: "Thai National ID Validator",
+    description:
+      "Verify Thai national identification numbers using the official checksum algorithm.",
+    icon: <Shield className="size-8 text-blue-400" />,
+    href: "/thai-national-id-validator",
     color: "from-blue-600/30 to-blue-500/10",
   },
   {
