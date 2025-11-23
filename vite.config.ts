@@ -10,7 +10,7 @@ export default defineConfig({
     tailwindcss(),
     Sitemap({
       hostname: "https://tools.khaodoes.dev",
-      dynamicRoutes: ["/minecraft-small-text", "/pdf-to-images"],
+      dynamicRoutes: ["/minecraft-small-text", "/pdf-to-images", "/thai-national-id-validator"],
     }),
   ],
   resolve: {
